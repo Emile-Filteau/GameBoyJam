@@ -1,0 +1,24 @@
+body {
+	background-image:url("../images/background.jpg");
+}
+
+.title {
+	width:800px;
+	height:60px;
+	background-image:url("../images/title.png");
+	margin:auto;
+}
+
+.gameboy {
+	width:293px;
+	height:514px;
+	background-image:url("../images/gameboy.png");
+	margin:auto;
+	position:relative;
+}
+
+.gameboy #game_canvas {
+	position:absolute;
+	left:65px;
+	top:58px;
+}
