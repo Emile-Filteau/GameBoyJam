@@ -1,13 +1,13 @@
 var CanvasView = View.extend({
 	constructor : function (partialURL, rootId, callback) {
-        this.base(partialURL, rootId, callback);
         this.canvas = {};
-        this.context = {};
-        /*
-		this.canvas = document.getElementById(canvasId);
-		this.context = this.canvas.getContext("2d");
-		this.canvas.width = game.camera.width;
-		this.canvas.height = game.camera.height;*/
+        this.context = {};	
+		var ref = this;
+        this.base(partialURL, rootId, function() {
+			callback();
+			ref.canvas[rootId] = document.getElementById(rootId);
+			ref.context[rootId] = ref.canvas[rootId].getContext("2d");
+		});
 	},
 	
 	draw : function() {

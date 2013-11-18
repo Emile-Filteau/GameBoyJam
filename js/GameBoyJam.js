@@ -19,8 +19,6 @@ GameBoyJam = FilthyEngine.extend({
 			})
 		);
         this.getView('GAME').init = function() {
-            ref.getView('GAME').canvas['game_canvas'] = document.getElementById('game_canvas');
-            ref.getView('GAME').context['game_canvas'] = this.canvas['game_canvas'].getContext("2d");
             $(document).bind("keydown", function(event) {
                 ref.game.keypress(event.which);
             });
