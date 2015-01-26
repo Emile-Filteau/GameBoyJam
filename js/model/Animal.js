@@ -8,9 +8,9 @@ var AnimalConstants = {
 	RUN : 3
 }
 AnimalConstants['idleImages']['L'] = new Image();
-AnimalConstants['idleImages']['L'].src = "/images/Mooses/Idle_left.png";
+AnimalConstants['idleImages']['L'].src = "/images/Mooses/idle_left.png";
 AnimalConstants['idleImages']['R'] = new Image();
-AnimalConstants['idleImages']['R'].src = "/images/Mooses/Idle_right.png";
+AnimalConstants['idleImages']['R'].src = "/images/Mooses/idle_right.png";
 
 AnimalConstants['moveImages']['L'] = [];
 AnimalConstants['moveImages']['L'].push(new Image());
